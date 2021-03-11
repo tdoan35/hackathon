@@ -7,20 +7,15 @@
 	"description": "Places the lastest stock price whenever a company's name from a user defined portfolio shows up on the webpage.",
 	"author": "Ty Doan, Jin Taco",
 
-	"background": {
-    "scripts": [
-			"jquery-3.1.1.min.js",
-      "client/main.js"
-    ],
-		"matches": ["https://stackoverflow.com/*"],
-    "persistent": true
-  }
-
 	"content_scripts": [
 		{
+			"matches": ["http://*/*", "https://*/*", "https://www.google.com/*"],
+      "css": ["client/style.css"],
 			"js": ["jquery-3.1.1.min.js", "client/main.js"],
 			"persistent": true
 		}
-	]
+	], "web_accessible_resources": [
+    "client/style.css"
+  ]
 
 }
