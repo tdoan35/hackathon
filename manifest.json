@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 
-	"name": "Ty and Jin's Fantastic Quick Stock Viewer",
+	"name": "Ty and Jin's Fantastic Quick Stonk Viewer",
 	"short_name": "QuickStonk",
 	"version": "0.1",
 	"description": "Places the lastest stock price whenever a company's name from a user defined portfolio shows up on the webpage.",
@@ -10,12 +10,12 @@
 	"content_scripts": [
 		{
 			"matches": ["http://*/*", "https://*/*", "https://www.google.com/*"],
-      "css": ["client/style.css"],
+      		"css": ["client/style.css"],
 			"js": ["jquery-3.1.1.min.js", "client/main.js"],
 			"persistent": true
 		}
 	], "web_accessible_resources": [
-    "client/style.css"
+    "client/style.css"	
   ]
 
 }
